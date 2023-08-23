@@ -9,12 +9,18 @@ export default function Navbar() {
           <a href="#" className="nav__link">
             Home
           </a>
+        </li>
+        <li>
           <a href="#" className="nav__link">
             About Me
           </a>
+        </li>
+        <li>
           <a href="#" className="nav__link">
             Projects
           </a>
+        </li>
+        <li>
           <a href="#" className="nav__link">
             Contact Me
           </a>

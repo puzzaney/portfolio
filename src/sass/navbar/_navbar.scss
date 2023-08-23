@@ -1,0 +1,40 @@
+@import 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap';
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 3rem 0;
+
+  width: 80%;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  &__items {
+    display: flex;
+    list-style: none;
+    font-size: 1.75rem;
+
+    & > * {
+      margin-left: 2rem;
+    }
+  }
+
+  &__link {
+    &:visited,
+    &:link {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--color-grey-dark-1);
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}
