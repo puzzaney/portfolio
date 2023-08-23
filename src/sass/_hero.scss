@@ -1,26 +1,29 @@
 @keyframes img-animation {
   0% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
-
   50% {
-    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
   }
-
   100% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
 
 .hero {
   background-color: var(--color-grey-light-2);
+  min-height: 100vh;
+  position: relative;
   &__container {
     width: 75%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
+    gap: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
   }
 
   &__intro {
@@ -47,7 +50,7 @@
     width: 30rem;
     overflow: hidden;
     animation: img-animation 5s ease-in-out infinite;
-    box-shadow: 0 2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
     transition: all 1s ease-in-out;
   }
 
@@ -59,9 +62,16 @@
       font-size: 4rem;
       margin-right: 3rem;
       filter: grayscale(100);
+      transition: all 0.3s;
 
       &:hover {
         filter: grayscale(0);
+        transform: scale(1.1);
+      }
+
+      &:active {
+        transform: scale(1.1) translateY(-0.3rem);
+        filter: none;
       }
     }
   }

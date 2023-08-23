@@ -1,4 +1,3 @@
-import React from 'react';
 import Portrait from '../imgs/portrait.jpg';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 
