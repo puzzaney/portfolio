@@ -1,3 +1,17 @@
+@keyframes img-animation {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
 .hero {
   background-color: var(--color-grey-light-2);
   &__container {
@@ -31,6 +45,10 @@
 
   &__img {
     width: 30rem;
+    overflow: hidden;
+    animation: img-animation 5s ease-in-out infinite;
+    box-shadow: 0 2rem 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+    transition: all 1s ease-in-out;
   }
 
   &__socials {
