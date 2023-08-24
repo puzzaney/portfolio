@@ -1,0 +1,25 @@
+.icon__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &-icon {
+    font-size: 10rem;
+  }
+
+  &-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+  }
+}

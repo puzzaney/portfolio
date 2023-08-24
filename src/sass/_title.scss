@@ -1,0 +1,12 @@
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  &__primary {
+    font-size: 3rem;
+    font-family: inherit;
+    border: 0.5rem solid black;
+    padding: 1.2rem 7rem;
+    text-transform: uppercase;
+  }
+}
