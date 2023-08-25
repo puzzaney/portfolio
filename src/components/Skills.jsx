@@ -9,7 +9,7 @@ import {
 } from 'react-icons/si';
 import SkillsIconContainer from './SkillsIconContainer';
 
-export default function AboutMe() {
+export default function Skills() {
   return (
     <div className="skills">
       <Title title="Skills" />
