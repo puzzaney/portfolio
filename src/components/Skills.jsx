@@ -12,7 +12,7 @@ import SkillsIconContainer from './SkillsIconContainer';
 
 export default function AboutMe() {
   return (
-    <div className="about">
+    <div className="skills">
       <Title title="Skills" />
       <SkillsIconContainer
         title1="html5"
