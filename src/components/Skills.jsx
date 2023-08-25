@@ -1,5 +1,4 @@
 import Title from './Title';
-import Icon from './Icon';
 import {
   SiHtml5,
   SiCss3,
