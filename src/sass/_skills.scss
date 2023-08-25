@@ -1,4 +1,15 @@
 .skills {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
   &__icon-container {
     display: flex;
     justify-content: center;

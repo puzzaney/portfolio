@@ -1,17 +1,31 @@
 .aboutme {
   max-width: 70%;
   margin: 0 auto;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 5rem;
+  scroll-behavior: smooth;
+
+  min-height: 100vh;
 
   &__description {
     margin-top: 5rem;
     font-size: 2rem;
     font-weight: 200;
-    text-align: center;
+    // text-align: center;
     text-shadow: 0 2.5rem 5.5rem rgba(0, 0, 0);
+  }
+
+  &__explore {
+    font-size: 2rem;
+    font-weight: 500;
+    // text-align: center;
+    margin: 5rem 0;
+    border-left: 0.3rem solid black;
+    border-right: 0.3rem solid black;
+    padding: 0 4rem;
+    text-transform: uppercase;
   }
 }

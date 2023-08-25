@@ -11,7 +11,7 @@ export default function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#" className="nav__link">
+          <a href="#aboutme" className="nav__link">
             About Me
           </a>
         </li>

@@ -1,0 +1,32 @@
+.explore-container {
+  display: flex;
+}
+
+.explore {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 5rem;
+  position: relative;
+  max-width: 40rem;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  &__icon {
+    font-size: 10rem;
+    position: absolute;
+    left: -4rem;
+    top: -2rem;
+    opacity: 0.1;
+  }
+}
