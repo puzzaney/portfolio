@@ -10,7 +10,7 @@ export default function SkillsIconContainer({
   icon3,
 }) {
   return (
-    <div className="about__icon-container">
+    <div className="skills__icon-container">
       <Icon title={title1}>{icon1}</Icon>
 
       <Icon title={title2}>{icon2}</Icon>
