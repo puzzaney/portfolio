@@ -8,33 +8,28 @@ import {
   SiSass,
   SiReact,
 } from 'react-icons/si';
+import SkillsIconContainer from './SkillsIconContainer';
 
 export default function AboutMe() {
   return (
     <div className="about">
       <Title title="Skills" />
-      <div className="about__icon-container">
-        <Icon title="html5">
-          {<SiHtml5 className="icon__container-icon" />}
-        </Icon>
-
-        <Icon title="css3">{<SiCss3 className="icon__container-icon" />}</Icon>
-
-        <Icon title="javascript">
-          {<SiJavascript className="icon__container-icon" />}
-        </Icon>
-      </div>
-      <div className="about__icon-container">
-        <Icon title="tailwindcss">
-          {<SiTailwindcss className="icon__container-icon" />}
-        </Icon>
-
-        <Icon title="sass">{<SiSass className="icon__container-icon" />}</Icon>
-
-        <Icon title="react">
-          {<SiReact className="icon__container-icon" />}
-        </Icon>
-      </div>
+      <SkillsIconContainer
+        title1="html5"
+        icon1={<SiHtml5 className="icon__container-icon" />}
+        title2="css3"
+        icon2={<SiCss3 className="icon__container-icon" />}
+        title3="javascript"
+        icon3={<SiJavascript className="icon__container-icon" />}
+      />
+      <SkillsIconContainer
+        title1="tailwindcss"
+        icon1={<SiTailwindcss className="icon__container-icon" />}
+        title2="sass"
+        icon2={<SiSass className="icon__container-icon" />}
+        title3="react"
+        icon3={<SiReact className="icon__container-icon" />}
+      />
     </div>
   );
 }
